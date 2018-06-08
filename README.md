@@ -1,1 +1,2 @@
 # Predicting-Credit-Card-Defaults-with-Decision-Trees
+With credit card balances reaching an average of $16,000 per household and student loans becoming the largest source of household debt, it's clear that Americans are financing many aspects of their lives. For credit card lenders interesting in mitigating loses from risky borrowers, the desire to build models that identify high-risk borrowers has never been stronger. In this work, we constructed predictive models to identify credit customers who are likely to default on their next payment.
