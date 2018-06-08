@@ -288,20 +288,3 @@ new_results = resamples(list(#logistic_model = logistic_model,
 dotplot(new_results)
 
 summary(new_results)
-
-# build boostedTree_model
-boostedTree_model = train(y = cc_train$default_next_month,
-                     x = train_set,
-                     method = 'blackboost')
-                     #tuneLength = 20,
-                     #trControl = trainControl(method = 'cv', number = 10))
-
-boostedTree_model$finalModel
-
-# plot the variable importance plot
-plot(varImp(boostedTree_model), main = 'varImp plot for boostedTree model')
-
-# test predictions for boosted tree model
-boostedTree_predictions = predict(boostedTree_model, newdata = cc_test)
-confusionMatrix(boostedTree_predictions, cc_test$default_next_month)
-
